@@ -1,13 +1,24 @@
 import React from 'react'
 import './App.css'
+import Navbar from './component/Navbar';
+import Hero from './component/Hero';
+import Popular from './component/popularPrud';
+import About from './component/About';
+import CTA from './component/CTA';
+import Footer from './component/Footer';
 
 function App() {
 
 
   return (
-      <p className="text-amber-600">
-        Click on the Vite and React logos to learn more
-      </p>
+      <>
+      <Navbar />
+      < Hero />
+      <Popular />
+      <About />
+      <CTA />
+      <Footer />
+      </>
   )
 }
 
