@@ -7,9 +7,12 @@ function Hero (){
 
     return(
 
-        <>
-        <h1>هیرو</h1>
-        </>
+        <section>
+        <div className="bg-red-500 w-full h-128">
+         
+        </div>
+
+        </section>
     )
 }
 
