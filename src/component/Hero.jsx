@@ -8,14 +8,14 @@ function Hero (){
 
     return(
 
-        <section className="bg-cover bg-center w-full h-128 text-orange-700"
+        <section className="bg-cover bg-center w-full h-80 md:h-128 text-orange-700"
         style={{ backgroundImage: `url(${HeroI})` }}>
         <div className="flex flex-col justify-center items-start container mx-5 h-[60vh]">
          <h1 className="text-4xl font-extrabold mb-6 md:text-6xl ">
            کالکشن جدید پاییز
          </h1>
 
-         <p className="text-lg max-w-lg mb-8">
+         <p className="text-lg max-w-lg mb-8 mx-4">
            با جدیدترین طراحی‌های ما، استایلی بی‌نظیر برای فصل جدید بسازید.
          </p>
 

@@ -9,7 +9,6 @@ import { MdClose } from "react-icons/md";
 
 
 function Navbar() {
-
 const [Open,setOpen]=useState(false);
 const [Dark,setDark]=useState(false);
 
