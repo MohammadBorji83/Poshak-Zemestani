@@ -1,14 +1,16 @@
 import React from "react";
+import boot from "../assets/BOOT.jpg"; 
+import pirhan from "../assets/pir.jpg";
+import manto from "../assets/manto.jpg";
+import shal from "../assets/shal.jpg";
 
 function Popular() {
   const products = [
-    { id: 1, name: "نیم بوت زنانه", price: "1,500,000 تومان", img: "/assets/BOOT.jpg" },
-    { id: 2, name: "پیراهن پشمی", price: "500,000 تومان", img: "/assets/pir.jpg" },
-    { id: 3, name: "مانتو پاییزه", price: "2,500,000 تومان", img: "/assets/manto.jpg" },
-    { id: 4, name: "شلوار بگ زنانه", price: "2,500,000 تومان", img: "/assets/shal.jpg" },
+    { id: 1, name: "نیم بوت زنانه", price: "1,500,000 تومان", img: boot },
+    { id: 2, name: "پیراهن پشمی", price: "500,000 تومان", img: pirhan },
+    { id: 3, name: "مانتو پاییزه", price: "2,500,000 تومان", img: manto },
+    { id: 4, name: "شلوار بگ زنانه", price: "2,500,000 تومان", img: shal },
   ];
-   
-  
 
   return (
     <section className="py-20 bg-gray-50">
@@ -30,14 +32,11 @@ function Popular() {
                   src={product.img}
                   alt={product.name}
                   className="w-full h-64 object-cover"
-                  onError={(e) => {
-                    console.error(`خطا در لود عکس ${product.name}`);
-                    e.target.src = "https://via.placeholder.com/300x300/gray/white?text=عکس+موجود+نیست";
-                  }}
                 />
                 {/* overlay برای hover */}
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                <div className="absolute inset-0 bg-gray-500 bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
                   <button
+                  
                     className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold transition-colors duration-200"
                   >
                     خرید کنید
