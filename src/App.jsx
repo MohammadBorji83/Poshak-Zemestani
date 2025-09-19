@@ -4,7 +4,6 @@ import Navbar from './component/Navbar';
 import Hero from './component/Hero';
 import Popular from './component/popularPrud';
 import About from './component/About';
-import CTA from './component/CTA';
 import Footer from './component/Footer';
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
       < Hero />
       <Popular />
       <About />
-      <CTA />
       <Footer />
       </>
   )

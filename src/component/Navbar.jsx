@@ -34,7 +34,7 @@ const [Dark,setDark]=useState(false);
             <button className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition">
               خرید کنید
             </button>
-            <button onClick={()=>setDark(!Dark)} className="w-12 h-12 rounded-full hover:bg-gray-600 p-2 items-center justify-center my-auto mx-auto">
+            <button onClick={()=>setDark(!Dark)} className="w-12 h-12 rounded-full  p-2 items-center justify-center my-auto mx-auto">
              {Dark ?<AiOutlineSun size={20} className="mr-1.5" />:<FaMoon size={20} className="mr-1.5"/>}
             </button>
           </div>
